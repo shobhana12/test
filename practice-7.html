@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width:200px;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div>I am div</div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("div").addEventListener("click",myfunction)
+// whenever we add an eventListner some additional property of the event canbe accessed throught parameter
+function myfunction() {
+    console.log(event.target.innerText)
+}
+</script>
